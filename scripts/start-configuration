@@ -253,6 +253,10 @@ case "${TYPE^^}" in
     exec "${SCRIPTS:-/}start-deployCrucible" "$@"
   ;;
 
+    MULTIPAPER)
+    exec "${SCRIPTS:-/}start-deployMultiPaper" "$@"
+  ;;
+
   *)
       log "Invalid type: '$TYPE'"
       log "Must be: VANILLA, FORGE, BUKKIT, SPIGOT, PAPER, FTBA (multiarch-only),"
